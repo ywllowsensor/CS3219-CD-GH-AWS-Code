@@ -17,7 +17,7 @@ jobs:
       - name: Generate deployment package
         run: zip -r address-book-app.zip config controllers models routes index.js package.json
       - name: Get Node.js version
-        run: echo "VERSION=$(node -p 'require(\"./package.json\").version')" >> "$GITHUB_ENV"
+        run: echo "VERSION=$(node -p 'require("./package.json").version')" >> "$GITHUB_ENV"
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v22
         with:
