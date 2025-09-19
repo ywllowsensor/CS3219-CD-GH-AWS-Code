@@ -27,4 +27,4 @@ jobs:
           environment_name: Ab-env
           version_label: $
           region: ap-southeast-1
-          deployment_package: address-book-app.zip
+          deployment_package: prod_zip.zip
