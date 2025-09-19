@@ -25,6 +25,6 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           application_name: ab
           environment_name: Ab-env
-          version_label: $
+          # version_label: $
           region: ap-southeast-1
           deployment_package: address-book-app.zip
